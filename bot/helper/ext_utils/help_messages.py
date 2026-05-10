@@ -322,102 +322,102 @@ But you can always use -c or -category with to select category before download s
 help_string = [f'''⌬ <b><i>Bᴀsɪᴄ Cᴏᴍᴍᴀɴᴅs!</i></b>
 
 <blockquote><b>Use Mirror commands to download your link/file/rcl</b>
-┠ /{BotCommands.MirrorCommand[0]} or /{BotCommands.MirrorCommand[1]}: Download via file/url/media to Upload to Cloud Drive.
-┖ /{BotCommands.CategorySelect}: Select Custom category to Upload to Cloud Drive from UserTds or Bot Categories.
+╭ /{BotCommands.MirrorCommand[0]} or /{BotCommands.MirrorCommand[1]}: Download via file/url/media to Upload to Cloud Drive.
+╰ /{BotCommands.CategorySelect}: Select Custom category to Upload to Cloud Drive from UserTds or Bot Categories.
 
 <b>Use qBit commands for torrents only:</b>
-┠ /{BotCommands.QbMirrorCommand[0]} or /{BotCommands.QbMirrorCommand[1]}: Download using qBittorrent and Upload to Cloud Drive.
-┖ /{BotCommands.BtSelectCommand}: Select files from torrents by btsel_gid or reply.
+╭ /{BotCommands.QbMirrorCommand[0]} or /{BotCommands.QbMirrorCommand[1]}: Download using qBittorrent and Upload to Cloud Drive.
+╰ /{BotCommands.BtSelectCommand}: Select files from torrents by btsel_gid or reply.
 
 <b>Use yt-dlp commands for YouTube or any supported sites:</b>
-┖ /{BotCommands.YtdlCommand[0]} or /{BotCommands.YtdlCommand[1]}: Mirror yt-dlp supported link.
+╰ /{BotCommands.YtdlCommand[0]} or /{BotCommands.YtdlCommand[1]}: Mirror yt-dlp supported link.
 
 <b>Use Leech commands for upload to Telegram:</b>
-┠ /{BotCommands.LeechCommand[0]} or /{BotCommands.LeechCommand[1]}: Upload to Telegram.
-┠ /{BotCommands.QbLeechCommand[0]} or /{BotCommands.QbLeechCommand[1]}: Download using qBittorrent and upload to Telegram(For torrents only).
-┖ /{BotCommands.YtdlLeechCommand[0]} or /{BotCommands.YtdlLeechCommand[1]}: Download using Yt-Dlp(supported link) and upload to telegram.
+╭ /{BotCommands.LeechCommand[0]} or /{BotCommands.LeechCommand[1]}: Upload to Telegram.
+┊ /{BotCommands.QbLeechCommand[0]} or /{BotCommands.QbLeechCommand[1]}: Download using qBittorrent and upload to Telegram(For torrents only).
+╰ /{BotCommands.YtdlLeechCommand[0]} or /{BotCommands.YtdlLeechCommand[1]}: Download using Yt-Dlp(supported link) and upload to telegram.
 
 <b>G-Drive commands:</b>
-┠ /{BotCommands.CloneCommand[0]}: Copy file/folder to Cloud Drive.
-┠ /{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive.
-┖ /{BotCommands.DeleteCommand} [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo).
+╭ /{BotCommands.CloneCommand[0]}: Copy file/folder to Cloud Drive.
+┊ /{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive.
+╰ /{BotCommands.DeleteCommand} [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo).
 
 <b>Cancel Tasks:</b>
-┖ /{BotCommands.CancelMirror}: Cancel task by cancel_gid or reply.</blockquote>''',
+╰ /{BotCommands.CancelMirror}: Cancel task by cancel_gid or reply.</blockquote>''',
 
 f'''⌬ <b><i>Usᴇʀs Cᴏᴍᴍᴀɴᴅs!</i></b>
 
 <blockquote><b>Bot Settings:</b>
-┖ /{BotCommands.UserSetCommand[0]} or /{BotCommands.UserSetCommand[1]} [query]: Open User Settings (PM also)
+╰ /{BotCommands.UserSetCommand[0]} or /{BotCommands.UserSetCommand[1]} [query]: Open User Settings (PM also)
 
 <b>Authentication:</b>
-┖ /login: Login to Bot to Access Bot without Temp Pass System (Private)
+╰ /login: Login to Bot to Access Bot without Temp Pass System (Private)
 
 <b>Bot Stats:</b>
-┠ /{BotCommands.StatusCommand[0]} or /{BotCommands.StatusCommand[1]}: Shows a status page of all active tasks.
-┠ /{BotCommands.StatsCommand[0]} or /{BotCommands.StatsCommand[1]}: Show Server detailed stats.
-┖ /{BotCommands.PingCommand[0]} or /{BotCommands.PingCommand[1]}: Check how long it takes to Ping the Bot.
+╭ /{BotCommands.StatusCommand[0]} or /{BotCommands.StatusCommand[1]}: Shows a status page of all active tasks.
+┊ /{BotCommands.StatsCommand[0]} or /{BotCommands.StatsCommand[1]}: Show Server detailed stats.
+╰ /{BotCommands.PingCommand[0]} or /{BotCommands.PingCommand[1]}: Check how long it takes to Ping the Bot.
 
 <b>RSS Feed:</b>
-┖ /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)</blockquote>''',
+╰ /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)</blockquote>''',
 
 f'''⌬ <b><i>Oᴡɴᴇʀ ᴏʀ Sᴜᴅᴏs Cᴏᴍᴍᴀɴᴅs!</i></b>
 
 <blockquote><b>Bot Settings:</b>
-┠ /{BotCommands.BotSetCommand[0]} or /{BotCommands.BotSetCommand[1]} [query]: Open Bot Settings (Only Owner & Sudo).
-┖ /{BotCommands.UsersCommand}: Show User Stats Info (Only Owner & Sudo).
+╭ /{BotCommands.BotSetCommand[0]} or /{BotCommands.BotSetCommand[1]} [query]: Open Bot Settings (Only Owner & Sudo).
+╰ /{BotCommands.UsersCommand}: Show User Stats Info (Only Owner & Sudo).
 
 <b>Authentication:</b>
-┠ /{BotCommands.AuthorizeCommand[0]} or /{BotCommands.AuthorizeCommand[1]}: Authorize a chat or a user to use the bot (Only Owner & Sudo).
-┠ /{BotCommands.UnAuthorizeCommand[0]} or /{BotCommands.UnAuthorizeCommand[1]}: Unauthorize a chat or a user to use the bot (Only Owner & Sudo).
-┠ /{BotCommands.AddSudoCommand}: Add sudo user (Only Owner).
-┠ /{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner).
-┠ /{BotCommands.AddBlackListCommand[0]} or /{BotCommands.AddBlackListCommand[1]}: Add User in BlackListed, so that user can't use the Bot anymore.
-┖ /{BotCommands.RmBlackListCommand[0]} or /{BotCommands.RmBlackListCommand[1]}: Remove a BlackListed User, so that user can again use the Bot.
+╭ /{BotCommands.AuthorizeCommand[0]} or /{BotCommands.AuthorizeCommand[1]}: Authorize a chat or a user to use the bot (Only Owner & Sudo).
+┊ /{BotCommands.UnAuthorizeCommand[0]} or /{BotCommands.UnAuthorizeCommand[1]}: Unauthorize a chat or a user to use the bot (Only Owner & Sudo).
+┊ /{BotCommands.AddSudoCommand}: Add sudo user (Only Owner).
+┊ /{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner).
+┊ /{BotCommands.AddBlackListCommand[0]} or /{BotCommands.AddBlackListCommand[1]}: Add User in BlackListed, so that user can't use the Bot anymore.
+╰ /{BotCommands.RmBlackListCommand[0]} or /{BotCommands.RmBlackListCommand[1]}: Remove a BlackListed User, so that user can again use the Bot.
 
 <b>Bot Stats:</b>
-┖ /{BotCommands.BroadcastCommand[0]} or /{BotCommands.BroadcastCommand[1]} [reply_msg]: Broadcast to PM users who have started the bot anytime.
+╰ /{BotCommands.BroadcastCommand[0]} or /{BotCommands.BroadcastCommand[1]} [reply_msg]: Broadcast to PM users who have started the bot anytime.
 
 <b>G-Drive commands:</b>
-┖ /{BotCommands.GDCleanCommand[0]} or /{BotCommands.GDCleanCommand[1]} [drive_id]: Delete all files from specific folder in Google Drive.
+╰ /{BotCommands.GDCleanCommand[0]} or /{BotCommands.GDCleanCommand[1]} [drive_id]: Delete all files from specific folder in Google Drive.
 
 <b>Cancel Tasks:</b>
-┖ /{BotCommands.CancelAllCommand[0]}: Cancel all Tasks & /{BotCommands.CancelAllCommand[1]} for Multiple Bots.
+╰ /{BotCommands.CancelAllCommand[0]}: Cancel all Tasks & /{BotCommands.CancelAllCommand[1]} for Multiple Bots.
 
 <b>Maintainance:</b>
-┠ /{BotCommands.RestartCommand[0]} or /{BotCommands.RestartCommand[1]}: Restart and Update the Bot (Only Owner & Sudo).
-┠ /{BotCommands.RestartCommand[2]}: Restart and Update all Bots (Only Owner & Sudo).
-┖ /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports (Only Owner & Sudo).
+╭ /{BotCommands.RestartCommand[0]} or /{BotCommands.RestartCommand[1]}: Restart and Update the Bot (Only Owner & Sudo).
+┊ /{BotCommands.RestartCommand[2]}: Restart and Update all Bots (Only Owner & Sudo).
+╰ /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports (Only Owner & Sudo).
 
 <b>Executors:</b>
-┠ /{BotCommands.ShellCommand}: Run shell commands (Only Owner).
-┠ /{BotCommands.EvalCommand}: Run Python Code Line | Lines (Only Owner).
-┠ /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
-┠ /{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
-┖ /exportsession: Generate User StringSession of Same Pyro Version (Only Owner).
+╭ /{BotCommands.ShellCommand}: Run shell commands (Only Owner).
+┊ /{BotCommands.EvalCommand}: Run Python Code Line | Lines (Only Owner).
+┊ /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
+┊ /{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
+╰ /exportsession: Generate User StringSession of Same Pyro Version (Only Owner).
 
 <b>RSS Feed:</b>
-┖ /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)
+╰ /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)
 
 <b>Extras:</b>
-┠ /{BotCommands.AddImageCommand} [url/photo]: Add Images in Bot
-┖ /{BotCommands.ImagesCommand}: Generate grid of Stored Images.</blockquote>''',
+╭ /{BotCommands.AddImageCommand} [url/photo]: Add Images in Bot
+╰ /{BotCommands.ImagesCommand}: Generate grid of Stored Images.</blockquote>''',
 
 f'''⌬ <b><i>Mɪsᴄᴇʟʟᴀɴᴇᴏᴜs Cᴏᴍᴍᴀɴᴅs!</i></b>
 
 <blockquote><b>Extras:</b>
-┠ /{BotCommands.SpeedCommand[0]} or /{BotCommands.SpeedCommand[1]}: Check Speed in VPS/Server.
-┖ /{BotCommands.MediaInfoCommand[0]} or /{BotCommands.MediaInfoCommand[1]} [url/media]: Generate MediaInfo of Media or DL Urls
+╭ /{BotCommands.SpeedCommand[0]} or /{BotCommands.SpeedCommand[1]}: Check Speed in VPS/Server.
+╰ /{BotCommands.MediaInfoCommand[0]} or /{BotCommands.MediaInfoCommand[1]} [url/media]: Generate MediaInfo of Media or DL Urls
 
 <b>Torrent/Drive Search:</b>
-┠ /{BotCommands.ListCommand} [query]: Search in Google Drive(s).
-┖ /{BotCommands.SearchCommand} [query]: Search for torrents with API.
+╭ /{BotCommands.ListCommand} [query]: Search in Google Drive(s).
+╰ /{BotCommands.SearchCommand} [query]: Search for torrents with API.
 
 <b>Movie/TV Shows/Drama Search:</b>
-┠ /{BotCommands.IMDBCommand}: Search in IMDB.
-┠ /{BotCommands.AniListCommand}: Search for anime in AniList.
-┠ /{BotCommands.AnimeHelpCommand}: Anime help guide.
-┖ /{BotCommands.MyDramaListCommand}: Search in MyDramaList.</blockquote>
+╭ /{BotCommands.IMDBCommand}: Search in IMDB.
+┊ /{BotCommands.AniListCommand}: Search for anime in AniList.
+┊ /{BotCommands.AnimeHelpCommand}: Anime help guide.
+╰ /{BotCommands.MyDramaListCommand}: Search in MyDramaList.</blockquote>
 ''']
 
 PASSWORD_ERROR_MESSAGE = """
@@ -450,7 +450,7 @@ default_desp = {'AS_DOCUMENT': 'Default type of Telegram file upload. Default is
                 'IMDB_TEMPLATE': 'Set Bot Default IMDB Template. HTML Tags, Emojis supported. str',
                 'AUTHOR_NAME': 'Author name for Telegraph pages, Shown in Telegraph Page as by AUTHOR_NAME',
                 'AUTHOR_URL': 'Author URL for Telegraph page, Put Channel URL to Show Join Channel. Str',
-                'COVER_IMAGE': 'Cover Image for Telegraph Page. Put Telegraph Photo Link',
+                'COVER_IMAGE': 'Cover Image for Telegraph Photo Link',
                 'TITLE_NAME': 'Title name for Telegraph pages (while using /list command)',
                 'GD_INFO': 'Description of file uploaded to gdrive using bot',
                 'DELETE_LINKS': 'Delete TgLink/Magnet/File on Start of Task to Auto Clean Group. Default is False',
