@@ -659,7 +659,7 @@ class MirrorLeechListener:
                         buttons.build_menu(2),
                         photo=self.random_pic,
                     )
-                 fmsg = ""
+                 fmsg = "\n"
                 #for index, (link, name) in enumerate(files.items(), start=1):
                 #    fmsg += f"<blockquote>{index}. <a href='{link}'>{name}</a></blockquote>\n"
                 #    if len(msg.encode() + fmsg.encode()) > (
