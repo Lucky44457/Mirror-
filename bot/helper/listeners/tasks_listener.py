@@ -647,7 +647,7 @@ class MirrorLeechListener:
                 if self.isSuperGroup and not self.isPM:
                     message += BotTheme("L_LL_MSG")
                 elif self.isSuperGroup and self.isPM:
-                    message += BotTheme("L_LL_MSG")
+              #      message += BotTheme("L_LL_MSG")
                     message += BotTheme("L_BOT_MSG")
                     buttons.ibutton(
                         BotTheme("CHECK_PM"), f"wzmlx {user_id} botpm", "header"
@@ -659,12 +659,12 @@ class MirrorLeechListener:
                         buttons.build_menu(2),
                         photo=self.random_pic,
                     )
-                 fmsg = "\n"
-                #for index, (link, name) in enumerate(files.items(), start=1):
-                #    fmsg += f"<blockquote>{index}. <a href='{link}'>{name}</a></blockquote>\n"
-                #    if len(msg.encode() + fmsg.encode()) > (
-                #        4000 if len(config_dict["IMAGES"]) == 0 else 1000
-                #    ):
+                fmsg = "\n"
+                for index, (link, name) in enumerate(files.items(), start=1):
+                    fmsg += f"<blockquote>{index}. <a href='{link}'>{name}</a></blockquote>\n"
+                    if len(msg.encode() + fmsg.encode()) > (
+                        4000 if len(config_dict["IMAGES"]) == 0 else 1000
+                    ):
 
                         if config_dict["SAFE_MODE"]:
                             if self.isSuperGroup:
@@ -911,12 +911,12 @@ class MirrorLeechListener:
             if self.sameDir and self.uid in self.sameDir["tasks"]:
                 self.sameDir["tasks"].remove(self.uid)
                 self.sameDir["total"] -= 1
-        msg = f"""<i><b>Download Stopped!</b></i>
-
-<blockquote>╭ <b>Task for:</b> {self.tag}
-┊ <b>Due To:</b> {escape(error)}
-┊ <b>Mode:</b> {self.upload_details['mode']}
-╰ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}</blockquote>"""
+        msg = f"""<i><b>〶 Download Stopped!</b></i>
+┠ <b>Task for:</b> {self.tag}
+┃
+┠ <b>Due To:</b> {escape(error)}
+┠ <b>Mode:</b> {self.upload_details['mode']}
+┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}"""
         await sendMessage(self.message, msg, button)
         if count == 0:
             await self.clean()
@@ -953,12 +953,12 @@ class MirrorLeechListener:
             if self.uid in download_dict.keys():
                 del download_dict[self.uid]
             count = len(download_dict)
-        msg = f"""<i><b>Upload Stopped!</b></i>
-
-<blockquote>╭ <b>Task for:</b> {self.tag}
-┊ <b>Due To:</b> {escape(error)}
-┊ <b>Mode:</b> {self.upload_details['mode']}
-╰ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}</blockquote>"""
+        msg = f"""<i><b>〶 Upload Stopped!</b></i>
+┠ <b>Task for:</b> {self.tag}
+┃
+┠ <b>Due To:</b> {escape(error)}
+┠ <b>Mode:</b> {self.upload_details['mode']}
+┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}"""
         await sendMessage(self.message, msg)
         if count == 0:
             await self.clean()
