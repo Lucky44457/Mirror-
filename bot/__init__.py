@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import os
+os.environ["LK21_REQUESTS_CACHE"] = "/dev/null"
 from tzlocal import get_localzone
 from pytz import timezone
 from datetime import datetime
